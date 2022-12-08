@@ -2,10 +2,6 @@ import React from 'react';
 import './Calculator.css';
 
 class Calculator extends React.Component {
-//   constructor(props) {
-//     super(props);
-//   }
-
   render() {
     return (
             <div className='wrapper'>
