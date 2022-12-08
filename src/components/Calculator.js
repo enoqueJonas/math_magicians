@@ -16,7 +16,6 @@ class Calculator extends React.Component {
   handleClickEvent(event) {
     const buttonName = event.target.id;
     const obj = calculate(this.state, buttonName);
-    console.log(obj);
     const { total, next, operation } = obj;
     this.setState({
       total,
@@ -30,7 +29,7 @@ class Calculator extends React.Component {
             <div className='wrapper'>
                 <div className='calculator'>
                     <ul className='row-1'>
-                        <li className='result'>{this.state.next || 0}</li>
+                        <li className='result'>{this.state.operation !== null ? this.state.next : this.state.total || 0}</li>
                     </ul>
                     <ul className='row row-2'>
                         <li className='calc-items' id='AC' onClick={this.handleClickEvent}>AC</li>
