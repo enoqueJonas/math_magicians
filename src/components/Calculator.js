@@ -35,7 +35,7 @@ class Calculator extends React.Component {
                         <li className='calc-items' id='AC' onClick={this.handleClickEvent}>AC</li>
                         <li className='calc-items' id='+/-' onClick={this.handleClickEvent}>+/-</li>
                         <li className='calc-items' id='%' onClick={this.handleClickEvent}>%</li>
-                        <li className='calc-items calc-operation' id='/' onClick={this.handleClickEvent}>/</li>
+                        <li className='calc-items calc-operation' id='÷' onClick={this.handleClickEvent}>÷</li>
                     </ul>
                     <ul className='row row-3'>
                         <li className='calc-items' id='7' onClick={this.handleClickEvent}>7</li>
