@@ -2,16 +2,7 @@ import './Calculator.css';
 import { useState } from 'react';
 import calculate from '../logic/calculate.js';
 
-function Calculator() {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       total: null,
-//       next: null,
-//       operation: null,
-//     };
-//     this.handleClickEvent = this.handleClickEvent.bind(this);
-//   }
+const Calculator = () => {
   const [calcObj, setCalcObj] = useState({
     total: null,
     next: null,
@@ -20,7 +11,6 @@ function Calculator() {
   const handleClickEvent = (event) => {
     const buttonName = event.target.id;
     const obj = calculate(calcObj, buttonName);
-    // const { total, next, operation } = obj;
     setCalcObj({
       ...obj,
     });
@@ -64,6 +54,6 @@ function Calculator() {
                 </div>
             </div>
   );
-}
+};
 
 export default Calculator;
