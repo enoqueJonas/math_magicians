@@ -20,10 +20,29 @@ const Navbar = () => {
     },
   ];
 
+  const navBarStyling = {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '85em',
+    height: '6em',
+    justifyContent: 'space-between',
+    margin: '0 30px',
+  };
+
+  const navMenuStyling = {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: '8px',
+    width: '12em',
+    height: '4em',
+    alignItems: 'center',
+    justifyContent: 'center',
+  };
+
   return (
-        <nav className="navBar">
+        <nav className="navBar" style={navBarStyling}>
             <h1>Math Magicians</h1>
-            <ul>
+            <ul style={navMenuStyling}>
                 {links.map((link) => (
                     <li key={link.id}>
                         <NavLink to={link.path} exact="true">
