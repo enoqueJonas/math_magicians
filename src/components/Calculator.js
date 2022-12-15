@@ -18,6 +18,9 @@ const Calculator = () => {
 
   return (
             <div className='wrapper'>
+              <div className='page-title-wrapper'>
+                <h2>Let's do Some Math!</h2>
+              </div>
                 <div className='calculator'>
                     <ul className='row-1'>
                         <li className='result'>{calcObj.operation !== null ? calcObj.next : calcObj.total || 0}</li>
