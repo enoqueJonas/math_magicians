@@ -1,10 +1,39 @@
+import React from "react";
+import { NavLink } from 'react-router-dom';
+
 const Navbar = () => {
+    const links = [
+        {
+            id: 1,
+            path: '/',
+            text: 'Home'
+        },
+        {
+            id: 2,
+            path: '/calculator',
+            text: 'Calculator'
+        },
+        {
+            id: 3,
+            path: '/quote',
+            text: 'Quote'
+        },
+    ]
+
     return (
-        <nav>
+        <nav className="navBar">
             <h1>Math Magicians</h1>
-            <ul className="navBar">
-                <li></li>
+            <ul>
+                {links.map(link => (
+                    <li key={link.id}>
+                        <NavLink to={link.path} exact="true">
+                            {link.text}
+                        </NavLink>
+                    </li>
+                ))}
             </ul>
         </nav>
     );
 }
+
+export default Navbar;
