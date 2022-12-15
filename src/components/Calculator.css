@@ -72,3 +72,15 @@ ul {
 .zero {
   width: 69%;
 }
+
+.page-title-wrapper {
+  height: 30em;
+  width: 40em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title-wrapper h2 {
+  font-size: 3em;
+}
