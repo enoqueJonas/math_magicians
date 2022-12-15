@@ -1,18 +1,18 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import Navbar from "../components/Navbar";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 describe('Navigation test', () => {
-    test('Title renders correctly', () => {
-        render(
+  test('Title renders correctly', () => {
+    render(
             <BrowserRouter>
                 <Navbar />
-            </BrowserRouter>
-        )
+            </BrowserRouter>,
+    );
 
-        screen.getByRole('heading');
+    screen.getByRole('heading');
 
-        expect(screen.getByRole('heading')).toHaveTextContent('Math Magicians');
-    })
-})
+    expect(screen.getByRole('heading')).toHaveTextContent('Math Magicians');
+  });
+});
