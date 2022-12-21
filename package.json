@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts  start eslint",
     "build": "react-scripts build",
-    "test": "NODE_ENV=production node_modules/react-scripts/bin/react-scripts.js test",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "stylelint": "stylelint \"**/*.{css,scss}\" --fix"
   },
