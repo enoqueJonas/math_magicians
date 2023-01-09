@@ -15,8 +15,8 @@
   "scripts": {
     "start": "react-scripts start eslint",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "test": "react-scripts test",
     "stylelint": "stylelint \"**/*.{css,scss}\" --fix"
   },
   "eslintConfig": {
